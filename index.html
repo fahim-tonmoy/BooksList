@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book List</title>
+  <link rel="stylesheet" href="/Styles/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="/index.html">Home</a>
+    <a href="/wishlist.html">Wishlist</a>
+  </nav>
+
+  <div class="container">
+    <div class="search-filter">
+      <input class="search-filter-input" type="text" id="searchBar" placeholder="Search books by title..." />
+      <select class="search-filter-dropdown" id="genreDropdown">
+        <option value="">All Genres</option>
+      </select>
+    </div>
+
+    <div id="bookList" class="book-list"></div>
+    <div id="pagination" class="pagination"></div>
+  </div>
+
+  <div class="loader" id="loader">
+    <div></div>
+  </div>
+
+  <script src="/Js/script.js"></script>
+</body>
+</html>
